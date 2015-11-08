@@ -1,0 +1,196 @@
+.iShia-datepicker
+{
+  font-family: verdana;
+  font-family: inherit;
+  font-size: 16px;
+
+  position: fixed;
+  margin: 0 auto; 
+
+  background-color: hsl(0,100%,100%);
+  border: 1px solid #eee;
+
+  &:after,
+  &:before
+  {
+    display: table;
+    content: '';
+  }
+
+  &:after
+  {
+    clear: both;
+  }
+
+  box-sizing: border-box;
+  *,
+  *:before,
+  *:after
+  {
+    box-sizing: inherit;
+  }
+
+  .datepicker-days-wrap
+  {
+    margin: 1em auto 0.5em;
+    
+    .datepicker-today
+    {
+      color: white; 
+      background-color: #82c658;
+    }
+    
+    .datepicker-other-month
+    {
+      pointer-events: none;
+
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+      /* IE 5-7 */
+      filter: alpha(opacity=50);
+      opacity: 0.5;
+    }
+
+    th, 
+    td
+    {
+      padding: 5px;
+      text-align: center;
+    }
+    
+    th
+    {
+      font-size: 0.7em;
+      font-weight: normal;
+      color: #82b861;
+      color: #82b861;
+    }
+    
+    td
+    {
+      font-size: 0.8em;
+      cursor: pointer; 
+      background-color: rgba(244, 242, 247, 0.75);
+    }
+    
+    td:hover
+    {
+      background-color: #cfe6c1;
+    }
+  }
+
+  button
+  {
+    cursor: pointer; 
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    appearance: none;
+  }
+
+  .datepicker-ctrl-btn
+  {
+    display: block;
+    position: absolute;
+    top: 50%;
+    color: #acaaaa;  
+    transform: translate3d(0, -50%, 0); 
+    transition: color 0.2s ease-in-out;
+
+    &:hover
+    {
+      color: #878787;
+    }
+  }
+
+  .datepicker-next
+  {
+    left: 100%;
+  }
+
+  .datepicker-pre
+  {
+    right: 100%;
+  }
+
+  .datepicker-close-btn
+  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 4px;
+    border: none;
+    
+    .fa
+    {
+      font-size: 0.8em;
+      color: #8a8a8a;
+      transition: color 0.2s ease-in-out;
+
+      &:hover
+      {
+        color: #a3a3a3;
+      }
+    }
+  }
+
+  .datepicker-year
+  {
+    display: table;
+    position: relative;
+    margin: 1em auto;
+
+    .datepicker-ctrl-btn
+    {
+      font-size: 0.6em;
+    }
+
+    span
+    {
+      font-size: 0.8em;
+      margin: 0 1em;
+      color: #4a4e82;
+    }
+  }
+
+  .datepicker-month
+  {
+    display: table;
+    position: relative;
+    margin: 1em auto;
+
+    .datepicker-ctrl-btn
+    {
+      font-size: 0.9em;
+    }
+
+    span
+    {
+      margin: 0 4em;
+      color: #4a4e82;
+    }
+  }
+
+  .datepicker-days
+  {
+    background-color: rgba(167, 211, 241, 0.13);
+    span
+    {
+      display: inline-block;
+      padding: 1em 2em;
+      color: #7bc9e5;
+    }
+  }
+
+  .datepicker-date-today
+  {
+    font-size: 0.8em;
+    padding: 0.5em;
+    text-align: center;
+
+    .datepicker-icon
+    {
+      color: #085382;
+    }
+  }
+}
+
